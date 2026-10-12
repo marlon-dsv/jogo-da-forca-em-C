@@ -48,5 +48,5 @@ Consolidar os fundamentos da programação estruturada por meio do desenvolvimen
 ## Instituição
 
 Universidade do Vale do Itajaí (UNIVALI)  
-Disciplina: Algoritmos e Programação
+Disciplina: Algoritmos e Programação 1
 
