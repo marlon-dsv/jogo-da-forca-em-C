@@ -1,151 +1,52 @@
-# 🎮 Jogo da Forca em C
+# Jogo da Forca em C
 
-Projeto desenvolvido em **C** para a disciplina de **Algoritmos e Programação 1 – UNIVALI**.
+## Sobre o Projeto
 
-O programa simula uma partida de **Jogo da Forca**, onde o jogador deve descobrir uma palavra relacionada à programação.
+Implementação do clássico **Jogo da Forca** utilizando a linguagem C, desenvolvida para a disciplina de Algoritmos e Programação da Universidade do Vale do Itajaí (UNIVALI).
 
-📌 **Palavra utilizada:** `WHILE`
+O jogo é executado inteiramente no terminal e permite que o jogador descubra uma palavra secreta por meio de tentativas de letras, respeitando um limite de erros. O projeto explora o uso de vetores, estruturas de repetição, estruturas condicionais e validação de entradas.
 
-## 📌 Funcionalidades
+## Funcionalidades
 
-- Palavra escondida com `_`;
-- Tentativa de letras;
-- Contagem de acertos e erros;
-- Limite de `6` erros;
-- Histórico de letras utilizadas;
-- Verificação de letras repetidas;
-- Validação da entrada;
-- Desenho da forca conforme os erros;
-- Mensagens de acerto e erro;
-- Verificação de vitória ou derrota;
-- Exibição da palavra ao final da partida.
+- Exibição da palavra secreta de forma mascarada.
+- Tentativas de descoberta da palavra por meio de letras.
+- Registro do histórico de letras utilizadas.
+- Desenho da forca em ASCII Art, atualizado conforme os erros.
+- Reconhecimento de letras maiúsculas e minúsculas.
+- Exibição do progresso da partida a cada rodada.
+- Controle do número de erros e tentativas.
+- Identificação das condições de vitória e derrota.
+- Organização da interface textual durante a execução.
 
-## 🛠️ Tecnologias
+## Mecânica do Jogo
 
-- C
-- `stdio.h`
-- `stdlib.h`
-- `ctype.h`
+O jogador deve informar uma letra por tentativa para descobrir a palavra secreta. Quando a letra escolhida pertence à palavra, sua posição é revelada na máscara de exibição. Quando não pertence, o contador de erros é atualizado e uma nova parte do desenho da forca é apresentada.
 
-## 🎮 Exemplo do jogo
+A partida termina quando o jogador descobre todas as letras da palavra ou atinge o limite de erros definido pelo programa.
 
-```text
---- JOGO DA FORCA ---
+## Conceitos de Programação Aplicados
 
-||----------------|
-||                |
-||                
-||                
-||                
-||                
-||                
-||                
-|| Palavra: _____
-||__________________
+- **Constantes:** definição dos limites de tentativas e dos tamanhos dos vetores.
+- **Variáveis e tipos de dados:** utilização de tipos como `int`, `char` e `bool`, conforme a implementação.
+- **Vetores unidimensionais:** armazenamento da palavra secreta, da máscara de exibição e do histórico de letras tentadas.
+- **Estruturas de repetição:** controle das rodadas e verificação dos caracteres.
+- **Estruturas condicionais:** análise dos acertos, erros e condições de encerramento.
+- **Seleção múltipla (`switch`):** aplicação da estrutura exigida na especificação acadêmica.
+- **Validação de entradas:** tratamento das letras informadas pelo jogador.
+- **Controle de índices:** acesso seguro às posições dos vetores.
 
-DICA: palavra usada na programacao!
+## Tecnologias
 
-Erros: 0/6
+- **Linguagem:** C
+- **Execução:** Terminal/console
+- **Interface:** ASCII Art e caracteres textuais.
 
-_ _ _ _ _
+## Objetivo Acadêmico
 
-Letras ja usadas:
+Consolidar os fundamentos da programação estruturada por meio do desenvolvimento de um jogo interativo, aplicando estruturas de dados unidimensionais, controle de fluxo e validação de entradas.
 
---- Digite uma letra: ---
+## Instituição
 
-Letra correta!
+Universidade do Vale do Itajaí (UNIVALI)  
+Disciplina: Algoritmos e Programação
 
-_ _ _ L _
-
-Letras ja usadas: L
-```
-
-## 🏆 Saídas esperadas
-
-### Vitória
-
-```text
---- JOGO DA FORCA ---
-
-||----------------|
-||                |
-||                
-||                
-||                
-||                
-||                
-||                
-|| Palavra: _____
-||__________________
-
-DICA: palavra usada na programacao!
-
-Erros: 0/6
-
-W H I L E
-
-Letras ja usadas: W H I L E
-
-🏆 VITORIA!
-
-A palavra e: WHILE
-
-PARABENS VOCE VENCEU!!!
-```
-
-### Derrota
-
-```text
---- JOGO DA FORCA ---
-
-||----------------|
-||                |
-||                O
-||               /|\
-||               / \
-||
-||
-||
-|| Palavra: WHILE
-||__________________
-
-💀 DERROTA!
-
-VOCE PERDEU!!!
-
-A palavra era: WHILE
-```
-
-### Letra repetida
-
-```text
-🔁 Letra repetida
-
-Essa letra ja foi tentada antes!
-```
-
-### Entrada inválida
-
-```text
-⚠️ Entrada invalida
-
-Digite apenas letras.
-```
-
-## 📂 Estrutura
-
-```text
-jogo-da-forca/
-├── main.c
-├── README.md
-└── .gitignore
-```
-
-## 🎯 Objetivo do projeto
-
-Aplicar conceitos básicos de programação em **C**, desenvolvendo a lógica necessária para criar um jogo simples e interativo.
-
-
-## 👨‍💻 Autor: Marlon Vritzl
-
-Projeto acadêmico desenvolvido para a disciplina de **Algoritmos e Programação 1 – UNIVALI**.
